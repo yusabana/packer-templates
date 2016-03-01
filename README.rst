@@ -25,6 +25,15 @@ For example, you can use Vagrantfile like below to use official CentOS 7 box.
 Usage
 =====
 
+NOTE: When mirror is changed
+-----------------
+
+Detarmine something iso from mirror site.
+Then set `builders.iso_url` and `builders.iso_checksum` at template.json.
+
+* [CentOS Mirror List](https://www.centos.org/download/mirrors/)
+
+
 Installing Packer
 -----------------
 
