@@ -1,0 +1,26 @@
+# FIXME: cannot working ansible-remote of provisioners
+- hosts:
+    - default
+  sudo: yes
+  gather_facts: yes
+  tasks:
+    - name: 'ほげーーーーーーーーーーーーーーーーーー'
+      debug: msg="hoge"
+    # - name: remove unnecessary yum-packages
+    #   yum: name={{ item }} state=absennt
+    #   with_items:
+    #     - gtk2
+    #     - libX11
+    #     - hicolor-icon-theme
+    #     - avahi
+    #     - freetype
+    #     - bitstream-vera-fonts
+    # - name: update all yum-packages
+    #   yum: name=* state=latest
+    # - name: clean yum cache files
+    #   command: yum clean all
+    # - name: remove unnecessary files
+    #   file: path={{ item }} state=absent
+    #   with_items:
+    #     - VBoxGuestAdditions_*.iso
+    #     - /tmp/rubygems-*
